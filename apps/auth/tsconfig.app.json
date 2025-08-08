@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    "types": ["node"],
+    "rootDir": "src",
+    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node16",
+    "target": "es2021",
+     "module": "Node16" ,
+     "paths": {
+      "@org/models": ["../../libs/models/src/models/index.ts"],
+    },
+  },
+  "include": [
+    "src/**/*.ts",
+    "../../libs/**/*.ts"
+  ],
+  "exclude": ["eslint.config.js", "eslint.config.cjs", "eslint.config.mjs"]
+}

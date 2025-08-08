@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "build": {
+      // ...existing code...
+    },
+    "serve": {
+      // ...existing code...
+    }
+    // Remove the "lint" target
+  }
+}

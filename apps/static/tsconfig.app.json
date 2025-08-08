@@ -1,0 +1,32 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    "types": ["node","Multer"],
+    "rootDir": "../../",
+    "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "target": "es2021",
+     "module": "Node16" ,
+     "paths": {
+      "@org/models": ["../../libs/models/src/models/index.ts"],
+    },
+    "moduleResolution": "node16",
+  },
+  "include": [
+    "src/**/*.ts",
+    "../../libs/**/*.ts"
+  ],
+  "exclude": [
+    "eslint.config.js",
+    "eslint.config.cjs",
+    "eslint.config.mjs"
+  ],
+  "references": [
+    {
+      "path": "../auth/tsconfig.app.json"
+    }
+  ]
+}

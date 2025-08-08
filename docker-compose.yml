@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  user:
+    build: ./apps/user
+    ports:
+      - "3004:3004"
+  auth:
+    build: ./apps/auth
+    ports:
+      - "3002:3002"
+  admin:
+    build: ./apps/admin
+    ports:
+      - "3001:3001"
+  static:
+    build: ./apps/static
+    ports:
+      - "3003:3003"

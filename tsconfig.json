@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "es2017",
+    "baseUrl": ".",
+    "paths": {
+      "@org/models/*": ["../../libs/models/src/*"]
+    }
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/auth"
+    },
+    {
+      "path": "./apps/static"
+    },
+    {
+      "path": "./apps/user"
+    },
+    {
+      "path": "./apps/admin"
+    }
+  ]
+}
